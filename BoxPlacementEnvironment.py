@@ -36,7 +36,7 @@ class BoxPlacementEnvironment(gym.Env):
         #     spaces.Discrete(self.bin_w), # bin_x
         #     spaces.Discrete(self.bin_h)  # bin_y
         # ])
-        self.action_space = spaces.Discrete(1 + self.bin_w * self.bin_h * self.bin_w * self.bin_h)
+        self.action_space = spaces.Discrete(1 + self.bin_w * self.bin_h)
         # State:
         # - bin occupation (matrix of 1s and 0s)
         # - open boxes (matrix of counts of boxes)
@@ -58,14 +58,8 @@ class BoxPlacementEnvironment(gym.Env):
             self.bpState.open_new_bin()
             self.bin_occupation = numpy.zeros(self.bpState.bin_size, dtype=numpy.int8)
         else:
-            box_w = (action - 1) // (self.bin_h * self.bin_w * self.bin_h)
-            box_h = (action - 1) // (self.bin_w * self.bin_h) % self.bin_h
-            bin_x = (action - 1) // (self.bin_h) % self.bin_w
-            bin_y = (action - 1) % self.bin_h
-            # box_w = action[1] # here box_w already has 1 subtracted (between { 0, 1 ... bin_w-1 })
-            # box_h = action[2]
-            # bin_x = action[3]
-            # bin_y = action[4]
+            box_w = (action - 1) // self.bin_h
+            box_h = (action - 1) % self.bin_h
             if self.box_counts[box_w][box_h] == 0:
                 reward = TRY_TO_PUT_INEXISTENT_BOX_REWARD
             else:
@@ -73,15 +67,15 @@ class BoxPlacementEnvironment(gym.Env):
                 
                 # Place the box in the current (last) bin
                 last_bin_index = len(self.bpState.bins) - 1
-                success = self.bpState.place_box_in_bin_at_pnt(last_box, last_bin_index, Point(bin_x, bin_y))
+                success = self.bpState.place_box_in_bin(last_box, last_bin_index)
                 if success:
                     reward = BOX_PLACED_SUCCESSFULLY_REWARD
                     self.nr_remaining_boxes -= 1
                     self.box_counts[box_w][box_h] -= 1
                     self.boxes_by_size[box_w][box_h].pop()
-                    for x in range(box_w + 1):
-                        for y in range(box_h + 1):
-                            self.bin_occupation[bin_x + x][bin_y + y] = 1
+                    self.bin_occupation = numpy.ones((self.bin_w, self.bin_h), dtype=numpy.int8)
+                    for p in self.bpState.bins[last_bin_index].pnts_open:
+                        self.bin_occupation[p.coord[0]][p.coord[1]] = 0
                 else:
                     reward = TRY_TO_PUT_BOX_INVALID_POSITION_REWARD
 

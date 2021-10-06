@@ -18,8 +18,8 @@ class Agent(nn.Module):
         super(Agent, self).__init__()
         self.env = env
         self.qf = ActionValueFunction(200,
-                                      10001)
-        self.e_greedy = ch.nn.EpsilonGreedy(0.1)
+                                      101)
+        self.e_greedy = ch.nn.EpsilonGreedy(0.3)
 
     def forward(self, x):
         # x = ch.onehot(x, self.env.state_size)
@@ -36,22 +36,23 @@ def main(env='BoxPlacementEnvironment-v0'):
         'BoxPlacementEnvironment-v0',
         entry_point = BoxPlacementEnvironment
     )
-    test_state = random_state_generator((10, 10),20,1,3,2,8)
+    test_state = random_state_generator((10, 10),5,1,3,2,8)
     env = gym.make(env, bpState= test_state)
     env = envs.Logger(env, interval=100)
     env = envs.Torch(env)
     env = envs.Runner(env)
     agent = Agent(env)
     discount = 1.00
-    optimizer = optim.SGD(agent.parameters(), lr=0.5, momentum=0.0)
+    optimizer = optim.SGD(agent.parameters(), lr=0.05, momentum=0.0)
     for iteration in range(1000):
-        test_state = random_state_generator((10, 10),20,1,3,2,8)
+        test_state = random_state_generator((10, 10),5,3,4,3,4)
         env.reset(bpState=test_state)
         if iteration % 10 == 0:
             print("BEFORE")
             print(env.bin_occupation)
             print(env.box_counts)
             print("------")
+        rewards = []
         for t in range(1, 100):
             transition = env.run(agent, steps=1)[0]
 
@@ -60,6 +61,7 @@ def main(env='BoxPlacementEnvironment-v0'):
             # next_state = ch.onehot(transition.next_state,
             #                        dim=env.state_size)
             next_q = agent.qf(next_state).max().detach()
+            rewards.append(transition.reward[0][0].item())
             td_error = ch.temporal_difference(discount,
                                             transition.reward,
                                             transition.done,
@@ -70,10 +72,14 @@ def main(env='BoxPlacementEnvironment-v0'):
             loss = td_error.pow(2).mul(0.5)
             loss.backward()
             optimizer.step()
+            if transition.done:
+                break
         if iteration % 10 == 0:
             print("AFTER")
             print(env.bin_occupation)
             print(env.box_counts)
+            print("------")
+            print(rewards)
             print("------")
 
 
