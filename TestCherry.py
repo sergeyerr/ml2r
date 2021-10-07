@@ -78,7 +78,7 @@ ATCH_SIZE = 128
 GAMMA = 0.999
 EPS_START = 0.9
 EPS_END = 0.05
-EPS_DECAY = 10000
+EPS_DECAY = 20000
 TARGET_UPDATE = 10
 
 INPUTS = 200
@@ -89,7 +89,7 @@ target_net.load_state_dict(policy_net.state_dict())
 target_net.eval()
 
 optimizer = optim.Adam(policy_net.parameters())
-memory = ReplayMemory(10000)
+memory = ReplayMemory(100000)
 
 
 steps_done = 0
@@ -163,7 +163,6 @@ def optimize_model():
 def main():
     num_episodes = 5000
     for i_episode in range(num_episodes):
-        print('episode', i_episode)
         # Initialize the environment and state
         n_boxes = random.randint(1, 100)
         env.reset(random_state_generator((10, 10),n_boxes,1,10,1,10))
@@ -191,9 +190,12 @@ def main():
             if done:
                 if i_episode % 100 == 0:
                     plot_packing_state(env.bpState, fname='./vis/episode_{}'.format(i_episode))
+                    # Intermediary models
+                    torch.save(policy_net.state_dict(), './policy_net_{}.pytorch_model'.format(i_episode))
+                    torch.save(target_net.state_dict(), './target_net_{}.pytorch_model'.format(i_episode))
                 episode_durations.append(t + 1)
                 break
-        print('Boxes: ', n_boxes,  '; Episode duration: ', episode_durations[-1])
+        print('Episode: ', i_episode, '; Boxes: ', n_boxes,  '; Episode duration: ', episode_durations[-1], '; #bins: ', env.bpState.bin_size, '; Eps: ', EPS_END + (EPS_START - EPS_END) * math.exp(-1. * steps_done / EPS_DECAY))
         # Update the target network, copying all weights and biases in DQN
         if i_episode % TARGET_UPDATE == 0:
             target_net.load_state_dict(policy_net.state_dict())

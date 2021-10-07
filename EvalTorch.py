@@ -10,7 +10,7 @@ from BoxPlacementEnvironment import BoxPlacementEnvironment
 from itertools import count
 from TestCherry import policy_net, select_action, device, EPS_START, EPS_END, EPS_DECAY, steps_done
 
-policy_net.load_state_dict(torch.load('./policy_net.pytorch_model'))
+policy_net.load_state_dict(torch.load('./policy_net_100.pytorch_model'))
 policy_net.eval()
 
 test_instance = 'state_random_big'
@@ -29,7 +29,7 @@ def main():
             action = select_action(state)
             _, reward, done, _ = env.step(action.item())
             reward = torch.tensor([reward], device=device)
-            if reward == 1:
+            if reward == 0: # placement success
                 print('count ', t, ' action ', action.item(), ' reward ', reward.item(), ' done ', done, ' ', env.nr_remaining_boxes, ' eps ', EPS_END + (EPS_START - EPS_END) * math.exp(-1. * steps_done / EPS_DECAY))
             if not done:
                 next_state = torch.from_numpy(env._next_observation().astype(np.float32)).unsqueeze(0)
