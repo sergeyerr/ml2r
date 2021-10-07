@@ -6,10 +6,10 @@ from Base.bp2DPnt import Point
 
 from Base.bp2DState import State
 
-NEW_BOX_REWARD = lambda bin: 70 - len(bin.pnts_open) # reward depending on bin fill
-TRY_TO_PUT_INEXISTENT_BOX_REWARD = -10
-TRY_TO_PUT_BOX_INVALID_POSITION_REWARD = -10
-BOX_PLACED_SUCCESSFULLY_REWARD = 0
+NEW_BOX_REWARD = lambda bin: 60 - 2 * len(bin.pnts_open) # reward depending on bin fill
+TRY_TO_PUT_INEXISTENT_BOX_REWARD = -30
+TRY_TO_PUT_BOX_INVALID_POSITION_REWARD = -30
+BOX_PLACED_SUCCESSFULLY_REWARD = 1
 
 class BoxPlacementEnvironment(gym.Env):
     """Custom Environment that follows gym interface"""
@@ -100,7 +100,7 @@ class BoxPlacementEnvironment(gym.Env):
         return self._next_observation()
 
     def _next_observation(self):
-        return numpy.array([self.bin_occupation, self.box_counts]).flatten()
+        return numpy.concatenate([self.bin_occupation, self.box_counts])
 
     def render(self, mode='human', close=False):
         # Render the environment to the screen

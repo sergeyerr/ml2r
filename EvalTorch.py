@@ -10,7 +10,7 @@ from BoxPlacementEnvironment import BoxPlacementEnvironment
 from itertools import count
 from TestCherry import policy_net, select_action, device, EPS_START, EPS_END, EPS_DECAY, steps_done
 
-policy_net.load_state_dict(torch.load('./policy_net_100.pytorch_model'))
+policy_net.load_state_dict(torch.load('./policy_net_500.pytorch_model'))
 policy_net.eval()
 
 test_instance = 'state_random_big'

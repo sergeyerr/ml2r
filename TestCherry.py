@@ -12,6 +12,7 @@ from collections import namedtuple, deque
 from itertools import count
 
 import torch
+from torch.cuda import current_stream
 import torch.nn as nn
 from torch.nn.modules.linear import Linear
 import torch.optim as optim
@@ -43,6 +44,8 @@ class ReplayMemory(object):
 
     def push(self, *args):
         """Save a transition"""
+        # current_step = Transition(*args)
+        # if current_step.reward > 0 or random.random() > 0.99: #only remember 1% of bad experiences
         self.memory.append(Transition(*args))
 
     def sample(self, batch_size):
@@ -55,19 +58,25 @@ class DQN(nn.Module):
 
     def __init__(self, inputs, outputs):
         super(DQN, self).__init__()
-        HIDDEN = 512
-        self.linear1 = Linear(inputs, HIDDEN)
-        self.bn1 = nn.BatchNorm1d(HIDDEN)
+        HIDDEN = 256
+        self.conv1 = nn.Conv2d(1, 32, kernel_size=3)
+        self.bn1 = nn.BatchNorm2d(32)
+        self.conv2 = nn.Conv2d(32, 16, kernel_size=3)
+        self.bn2 = nn.BatchNorm2d(16)
+        self.linear1 = Linear(1536, HIDDEN)
+        self.bn3 = nn.BatchNorm1d(HIDDEN)
         self.linear2 = Linear(HIDDEN, HIDDEN)
-        self.bn2 = nn.BatchNorm1d(HIDDEN)
+        self.bn4 = nn.BatchNorm1d(HIDDEN)
         self.linear3 = Linear(HIDDEN, outputs)
         
     # Called with either one element to determine next action, or a batch
     # during optimization. Returns tensor([[left0exp,right0exp]...]).
     def forward(self, x):
         x = x.to(device)
-        x = F.relu(self.bn1(self.linear1(x)))
-        x = F.relu(self.bn2(self.linear2(x)))
+        x = F.relu(self.bn1(self.conv1(x)))
+        x = F.relu(self.bn2(self.conv2(x)))
+        x = F.relu(self.bn3(self.linear1(x.view(x.size(0), -1))))
+        x = F.relu(self.bn4(self.linear2(x)))
         x = self.linear3(x)
         return x
 
@@ -166,7 +175,7 @@ def main():
         # Initialize the environment and state
         n_boxes = random.randint(1, 100)
         env.reset(random_state_generator((10, 10),n_boxes,1,10,1,10))
-        state = torch.from_numpy(env._next_observation().astype(np.float32)).unsqueeze(0)
+        state = torch.from_numpy(env._next_observation().astype(np.float32)).unsqueeze(0).unsqueeze(0)
         for t in count():
             # Select and perform an action
             action = select_action(state)
@@ -175,7 +184,7 @@ def main():
             # if reward == 1:
             #     print('count ', t, ' action ', action.item(), ' reward ', reward.item(), ' done ', done, ' ', env.nr_remaining_boxes, ' eps ', EPS_END + (EPS_START - EPS_END) * math.exp(-1. * steps_done / EPS_DECAY))
             if not done:
-                next_state = torch.from_numpy(env._next_observation().astype(np.float32)).unsqueeze(0)
+                next_state = torch.from_numpy(env._next_observation().astype(np.float32)).unsqueeze(0).unsqueeze(0)
             else:
                 next_state = None
 
@@ -191,8 +200,8 @@ def main():
                 if i_episode % 100 == 0:
                     plot_packing_state(env.bpState, fname='./vis/episode_{}'.format(i_episode))
                     # Intermediary models
-                    torch.save(policy_net.state_dict(), './policy_net_{}.pytorch_model'.format(i_episode))
-                    torch.save(target_net.state_dict(), './target_net_{}.pytorch_model'.format(i_episode))
+                    torch.save(policy_net.state_dict(), './policy_net_conv_{}.pytorch_model'.format(i_episode))
+                    torch.save(target_net.state_dict(), './target_net_conv_{}.pytorch_model'.format(i_episode))
                 episode_durations.append(t + 1)
                 break
         print('Episode: ', i_episode, '; Boxes: ', n_boxes,  '; Episode duration: ', episode_durations[-1], '; #bins: ', len(env.bpState.bins), '; Eps: ', EPS_END + (EPS_START - EPS_END) * math.exp(-1. * steps_done / EPS_DECAY))
