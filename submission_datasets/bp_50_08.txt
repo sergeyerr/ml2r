@@ -1,0 +1,65 @@
+% State of a bin packing problem:
+%
+% Bin number: 6
+% Total uncovered points: 600
+% Total covered points: 0
+% Number of boxes: 50
+% Unused boxes: 50
+% Runtime: None
+%
+% Bin size:
+10 10
+%
+% Boxes (width, height) not in some bins:
+7 3
+2 2
+3 4
+2 4
+2 3
+3 2
+4 3
+2 4
+6 3
+2 5
+4 3
+2 2
+2 3
+4 3
+2 3
+2 3
+2 2
+3 2
+5 6
+2 3
+2 3
+2 2
+3 6
+3 6
+2 3
+2 4
+5 4
+4 6
+4 3
+3 3
+4 4
+2 6
+3 3
+3 4
+4 8
+4 4
+3 3
+2 4
+2 4
+2 5
+2 2
+2 3
+4 3
+2 3
+2 7
+4 2
+3 8
+3 7
+3 6
+4 3
+%
+% Boxes (width, height, x_position, y_position, bin_id) in bins:
