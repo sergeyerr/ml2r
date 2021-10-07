@@ -249,7 +249,9 @@ class ShakerBFDProMax(PackerOnline):
                     new_bin.add_rect(*r)
                 elif state == 1:
                     state = 2 
+                    self._sorted_rect = [r] + self._sorted_rect[::-1]
                     self._sorted_rect = self._sorted_rect[::-1]
                 elif state == 2:
+                    self._sorted_rect = [r] + self._sorted_rect[::-1]
                     self._sorted_rect = self._sorted_rect[::-1]
                     state = 0
