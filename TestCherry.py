@@ -55,7 +55,7 @@ class DQN(nn.Module):
 
     def __init__(self, inputs, outputs):
         super(DQN, self).__init__()
-        HIDDEN = 128
+        HIDDEN = 512
         self.linear1 = Linear(inputs, HIDDEN)
         self.bn1 = nn.BatchNorm1d(HIDDEN)
         self.linear2 = Linear(HIDDEN, HIDDEN)
@@ -195,7 +195,7 @@ def main():
                     torch.save(target_net.state_dict(), './target_net_{}.pytorch_model'.format(i_episode))
                 episode_durations.append(t + 1)
                 break
-        print('Episode: ', i_episode, '; Boxes: ', n_boxes,  '; Episode duration: ', episode_durations[-1], '; #bins: ', env.bpState.bin_size, '; Eps: ', EPS_END + (EPS_START - EPS_END) * math.exp(-1. * steps_done / EPS_DECAY))
+        print('Episode: ', i_episode, '; Boxes: ', n_boxes,  '; Episode duration: ', episode_durations[-1], '; #bins: ', len(env.bpState.bins), '; Eps: ', EPS_END + (EPS_START - EPS_END) * math.exp(-1. * steps_done / EPS_DECAY))
         # Update the target network, copying all weights and biases in DQN
         if i_episode % TARGET_UPDATE == 0:
             target_net.load_state_dict(policy_net.state_dict())
