@@ -1,16 +1,15 @@
 #!/usr/bin/env python3
+# Inspired from https://pytorch.org/tutorials/intermediate/reinforcement_q_learning.html
 # conda install -c conda-forge gym 
 # conda install pytorch torchvision torchaudio cpuonly -c pytorch
-# pip install cherry_rl
-# pip install simple_rl
 
+import sys
 import gym
 import math
 import random
 import numpy as np
 from collections import namedtuple, deque
 from itertools import count
-from simple_rl.run_experiments import parse_args
 
 import torch
 import torch.nn as nn
@@ -19,10 +18,10 @@ import torch.optim as optim
 import torch.nn.functional as F
 import torchvision.transforms as T
 
+from Base.bp2DPlot import plot_packing_state
 from Base.bpStateGenerators import random_state_generator
-from BoxPlacementEnvironment import BoxPlacementEnvironment
 
-env = gym.make('CartPole-v0').unwrapped
+from BoxPlacementEnvironment import BoxPlacementEnvironment
 
 # if gpu is to be used
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -41,20 +40,10 @@ class ReplayMemory(object):
 
     def __init__(self, capacity):
         self.memory = deque([],maxlen=capacity)
-        self.good = 0
-        self.bad = 0
 
     def push(self, *args):
         """Save a transition"""
-        reward = args[3]
-        if reward > 0:
-            if self.good < self.bad + 5:
-                self.good += 1
-                self.memory.append(Transition(*args))
-        else:
-            if self.bad < self.good + 5:
-                self.bad += 1
-                self.memory.append(Transition(*args))
+        self.memory.append(Transition(*args))
 
     def sample(self, batch_size):
         return random.sample(self.memory, batch_size)
@@ -66,15 +55,20 @@ class DQN(nn.Module):
 
     def __init__(self, inputs, outputs):
         super(DQN, self).__init__()
-        self.linear1 = Linear(inputs, 16)
-        self.linear2 = Linear(16, outputs)
+        HIDDEN = 128
+        self.linear1 = Linear(inputs, HIDDEN)
+        self.bn1 = nn.BatchNorm1d(HIDDEN)
+        self.linear2 = Linear(HIDDEN, HIDDEN)
+        self.bn2 = nn.BatchNorm1d(HIDDEN)
+        self.linear3 = Linear(HIDDEN, outputs)
         
     # Called with either one element to determine next action, or a batch
     # during optimization. Returns tensor([[left0exp,right0exp]...]).
     def forward(self, x):
         x = x.to(device)
-        x = F.relu(self.linear1(x))
-        x = F.softmax(self.linear2(x))
+        x = F.relu(self.bn1(self.linear1(x)))
+        x = F.relu(self.bn2(self.linear2(x)))
+        x = self.linear3(x)
         return x
 
 
@@ -100,7 +94,6 @@ memory = ReplayMemory(10000)
 
 steps_done = 0
 
-
 def select_action(state):
     global steps_done
     sample = random.random()
@@ -108,13 +101,11 @@ def select_action(state):
         math.exp(-1. * steps_done / EPS_DECAY)
     steps_done += 1
     if sample > eps_threshold:
+        policy_net.eval()
         with torch.no_grad():
             # t.max(1) will return largest column value of each row.
             # second column on max result is index of where max element was
             # found, so we pick action with the larger expected reward.
-            if steps_done % 1000 == 0:
-                print(policy_net(state)[0][34:38])
-                print(policy_net(state).max(1))
             return policy_net(state).max(1)[1].view(1, 1)
     else:
         return torch.tensor([[random.randrange(ACTIONS)]], device=device, dtype=torch.long)
@@ -122,10 +113,11 @@ def select_action(state):
 
 episode_durations = []
 
-BATCH_SIZE = 64
+BATCH_SIZE = 256
 def optimize_model():
     if len(memory) < BATCH_SIZE:
         return
+    policy_net.train()
     transitions = memory.sample(BATCH_SIZE)
     # Transpose the batch (see https://stackoverflow.com/a/19343/3343043 for
     # detailed explanation). This converts batch-array of Transitions
@@ -168,39 +160,50 @@ def optimize_model():
         param.grad.data.clamp_(-1, 1)
     optimizer.step()
 
-num_episodes = 50
-for i_episode in range(num_episodes):
-    print('episode', i_episode)
-    # Initialize the environment and state
-    env.reset(random_state_generator((10, 10),5,4,4,5,6))
-    state = torch.from_numpy(env._next_observation().astype(np.float32)).unsqueeze(0)
-    for t in count():
-        # Select and perform an action
-        action = select_action(state)
-        _, reward, done, _ = env.step(action.item())
-        reward = torch.tensor([reward], device=device)
-        if reward == 1:
-            print('count ', t, ' action ', action.item(), ' reward ', reward.item(), ' done ', done, ' ', env.nr_remaining_boxes, ' eps ', EPS_END + (EPS_START - EPS_END) * math.exp(-1. * steps_done / EPS_DECAY))
-        if not done:
-            next_state = torch.from_numpy(env._next_observation().astype(np.float32)).unsqueeze(0)
-        else:
-            next_state = None
+def main():
+    num_episodes = 5000
+    for i_episode in range(num_episodes):
+        print('episode', i_episode)
+        # Initialize the environment and state
+        n_boxes = random.randint(1, 100)
+        env.reset(random_state_generator((10, 10),n_boxes,1,10,1,10))
+        state = torch.from_numpy(env._next_observation().astype(np.float32)).unsqueeze(0)
+        for t in count():
+            # Select and perform an action
+            action = select_action(state)
+            _, reward, done, _ = env.step(action.item())
+            reward = torch.tensor([reward], device=device)
+            # if reward == 1:
+            #     print('count ', t, ' action ', action.item(), ' reward ', reward.item(), ' done ', done, ' ', env.nr_remaining_boxes, ' eps ', EPS_END + (EPS_START - EPS_END) * math.exp(-1. * steps_done / EPS_DECAY))
+            if not done:
+                next_state = torch.from_numpy(env._next_observation().astype(np.float32)).unsqueeze(0)
+            else:
+                next_state = None
 
-        # Store the transition in memory
-        memory.push(state, action, next_state, reward)
+            # Store the transition in memory
+            memory.push(state, action, next_state, reward)
 
-        # Move to the next state
-        state = next_state
+            # Move to the next state
+            state = next_state
 
-        # Perform one step of the optimization (on the policy network)
-        optimize_model()
-        if done:
-            episode_durations.append(t + 1)
-            break
-    # Update the target network, copying all weights and biases in DQN
-    if i_episode % TARGET_UPDATE == 0:
-        target_net.load_state_dict(policy_net.state_dict())
+            # Perform one step of the optimization (on the policy network)
+            optimize_model()
+            if done:
+                if i_episode % 100 == 0:
+                    plot_packing_state(env.bpState, fname='./vis/episode_{}'.format(i_episode))
+                episode_durations.append(t + 1)
+                break
+        print('Boxes: ', n_boxes,  '; Episode duration: ', episode_durations[-1])
+        # Update the target network, copying all weights and biases in DQN
+        if i_episode % TARGET_UPDATE == 0:
+            target_net.load_state_dict(policy_net.state_dict())
 
-print('Complete')
-env.render()
-env.close()
+    torch.save(policy_net.state_dict(), './policy_net.pytorch_model')
+    torch.save(target_net.state_dict(), './target_net.pytorch_model')
+
+    print('Complete')
+    env.render()
+    env.close()
+
+if __name__ == '__main__':
+    sys.exit(main())
