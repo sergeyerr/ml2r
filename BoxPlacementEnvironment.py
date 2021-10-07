@@ -51,7 +51,6 @@ class BoxPlacementEnvironment(gym.Env):
 
     def step(self, action):
         reward = None
-        done = False
         # if action[0] == 1:
         if action == 0:
             reward = NEW_BOX_REWARD
@@ -78,7 +77,7 @@ class BoxPlacementEnvironment(gym.Env):
                         self.bin_occupation[p.coord[0]][p.coord[1]] = 0
                 else:
                     reward = TRY_TO_PUT_BOX_INVALID_POSITION_REWARD
-
+        done = self.nr_remaining_boxes == 0
         return self._next_observation(), reward, done, {}
     
     # Returns the initial state (empty bin, all open boxes counts)
