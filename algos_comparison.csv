@@ -1,610 +1,211 @@
 algo,packing,test_case,boxes_count
-<function max_rest at 0x00000206658240D0>,orgs bottom-left,uniform_500,158
-<function first_fit at 0x0000020665824040>,orgs bottom-left,uniform_500,158
-<function max_rest at 0x00000206658240D0>,orgs bottom-left,uniform_50,20
-<function first_fit at 0x0000020665824040>,orgs bottom-left,uniform_50,20
-<function max_rest at 0x00000206658240D0>,orgs bottom-left,uniform_1000,314
-<function first_fit at 0x0000020665824040>,orgs bottom-left,uniform_1000,314
-<function max_rest at 0x00000206658240D0>,orgs bottom-left,uniform_100,37
-<function first_fit at 0x0000020665824040>,orgs bottom-left,uniform_100,37
-<function max_rest at 0x00000206658240D0>,orgs bottom-left,small_500,20
-<function first_fit at 0x0000020665824040>,orgs bottom-left,small_500,20
-<function max_rest at 0x00000206658240D0>,orgs bottom-left,small_50,3
-<function first_fit at 0x0000020665824040>,orgs bottom-left,small_50,3
-<function max_rest at 0x00000206658240D0>,orgs bottom-left,small_1000,40
-<function first_fit at 0x0000020665824040>,orgs bottom-left,small_1000,40
-<function max_rest at 0x00000206658240D0>,orgs bottom-left,small_100,4
-<function first_fit at 0x0000020665824040>,orgs bottom-left,small_100,4
-<function max_rest at 0x00000206658240D0>,orgs bottom-left,meduim_500,204
-<function first_fit at 0x0000020665824040>,orgs bottom-left,meduim_500,204
-<function max_rest at 0x00000206658240D0>,orgs bottom-left,meduim_50,21
-<function first_fit at 0x0000020665824040>,orgs bottom-left,meduim_50,21
-<function max_rest at 0x00000206658240D0>,orgs bottom-left,meduim_1000,407
-<function first_fit at 0x0000020665824040>,orgs bottom-left,meduim_1000,407
-<function max_rest at 0x00000206658240D0>,orgs bottom-left,meduim_100,42
-<function first_fit at 0x0000020665824040>,orgs bottom-left,meduim_100,42
-<function max_rest at 0x00000206658240D0>,orgs bottom-left,medium_500,132
-<function first_fit at 0x0000020665824040>,orgs bottom-left,medium_500,132
-<function max_rest at 0x00000206658240D0>,orgs bottom-left,known_50_bins_3,9
-<function first_fit at 0x0000020665824040>,orgs bottom-left,known_50_bins_3,9
-<function max_rest at 0x00000206658240D0>,orgs bottom-left,known_500_bins_33,9
-<function first_fit at 0x0000020665824040>,orgs bottom-left,known_500_bins_33,9
-<function max_rest at 0x00000206658240D0>,orgs bottom-left,known_100_bins_6,9
-<function first_fit at 0x0000020665824040>,orgs bottom-left,known_100_bins_6,9
-<function max_rest at 0x00000206658240D0>,orgs bottom-left,known_1000_bins_66,9
-<function first_fit at 0x0000020665824040>,orgs bottom-left,known_1000_bins_66,9
-<function max_rest at 0x00000206658240D0>,orgs bottom-left,extremes_500,260
-<function first_fit at 0x0000020665824040>,orgs bottom-left,extremes_500,260
-<function max_rest at 0x00000206658240D0>,orgs bottom-left,extremes_50,27
-<function first_fit at 0x0000020665824040>,orgs bottom-left,extremes_50,27
-<function max_rest at 0x00000206658240D0>,orgs bottom-left,extremes_1000,520
-<function first_fit at 0x0000020665824040>,orgs bottom-left,extremes_1000,520
-<function max_rest at 0x00000206658240D0>,orgs bottom-left,extremes_100,52
-<function first_fit at 0x0000020665824040>,orgs bottom-left,extremes_100,52
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMinas'>,uniform_500,148
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMaxas'>,uniform_500,151
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLlas'>,uniform_500,151
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSlas'>,uniform_500,149
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLas'>,uniform_500,146
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSas'>,uniform_500,147
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfMinas'>,uniform_500,152
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfMaxas'>,uniform_500,151
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfLlas'>,uniform_500,151
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSlas'>,uniform_500,148
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfLas'>,uniform_500,149
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSas'>,uniform_500,149
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfMinas'>,uniform_500,151
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfMaxas'>,uniform_500,149
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfLlas'>,uniform_500,149
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfSlas'>,uniform_500,147
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfSas'>,uniform_500,149
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwflWm'>,uniform_500,157
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwfWm'>,uniform_500,146
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwfl'>,uniform_500,156
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwf'>,uniform_500,146
-shaker BFD pro,<class 'rectpack.skyline.SkylineBlWm'>,uniform_500,158
-shaker BFD pro,<class 'rectpack.skyline.SkylineBl'>,uniform_500,158
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBlsf'>,uniform_500,146
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBaf'>,uniform_500,146
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBssf'>,uniform_500,147
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBl'>,uniform_500,147
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMinas'>,uniform_50,16
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMaxas'>,uniform_50,17
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLlas'>,uniform_50,17
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSlas'>,uniform_50,17
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLas'>,uniform_50,16
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSas'>,uniform_50,17
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfMinas'>,uniform_50,16
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfMaxas'>,uniform_50,17
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfLlas'>,uniform_50,17
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSlas'>,uniform_50,17
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfLas'>,uniform_50,16
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSas'>,uniform_50,17
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfMinas'>,uniform_50,16
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfMaxas'>,uniform_50,17
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfLlas'>,uniform_50,17
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfSlas'>,uniform_50,16
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfSas'>,uniform_50,17
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwflWm'>,uniform_50,17
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwfWm'>,uniform_50,16
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwfl'>,uniform_50,17
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwf'>,uniform_50,16
-shaker BFD pro,<class 'rectpack.skyline.SkylineBlWm'>,uniform_50,17
-shaker BFD pro,<class 'rectpack.skyline.SkylineBl'>,uniform_50,17
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBlsf'>,uniform_50,16
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBaf'>,uniform_50,16
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBssf'>,uniform_50,16
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBl'>,uniform_50,16
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMinas'>,uniform_1000,304
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMaxas'>,uniform_1000,300
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLlas'>,uniform_1000,300
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSlas'>,uniform_1000,302
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLas'>,uniform_1000,295
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSas'>,uniform_1000,298
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfMinas'>,uniform_1000,299
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfMaxas'>,uniform_1000,302
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfLlas'>,uniform_1000,301
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSlas'>,uniform_1000,298
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfLas'>,uniform_1000,300
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSas'>,uniform_1000,297
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfMinas'>,uniform_1000,304
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfMaxas'>,uniform_1000,302
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfLlas'>,uniform_1000,302
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfSlas'>,uniform_1000,301
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfSas'>,uniform_1000,299
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwflWm'>,uniform_1000,309
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwfWm'>,uniform_1000,298
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwfl'>,uniform_1000,309
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwf'>,uniform_1000,298
-shaker BFD pro,<class 'rectpack.skyline.SkylineBlWm'>,uniform_1000,316
-shaker BFD pro,<class 'rectpack.skyline.SkylineBl'>,uniform_1000,318
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBlsf'>,uniform_1000,297
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBaf'>,uniform_1000,296
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBssf'>,uniform_1000,296
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBl'>,uniform_1000,298
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMinas'>,uniform_100,32
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMaxas'>,uniform_100,34
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLlas'>,uniform_100,34
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSlas'>,uniform_100,33
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLas'>,uniform_100,32
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSas'>,uniform_100,35
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfMinas'>,uniform_100,33
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfMaxas'>,uniform_100,33
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfLlas'>,uniform_100,34
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSlas'>,uniform_100,32
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfLas'>,uniform_100,32
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSas'>,uniform_100,34
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfMinas'>,uniform_100,33
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfMaxas'>,uniform_100,34
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfLlas'>,uniform_100,34
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfSlas'>,uniform_100,33
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfSas'>,uniform_100,35
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwflWm'>,uniform_100,34
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwfWm'>,uniform_100,33
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwfl'>,uniform_100,34
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwf'>,uniform_100,33
-shaker BFD pro,<class 'rectpack.skyline.SkylineBlWm'>,uniform_100,34
-shaker BFD pro,<class 'rectpack.skyline.SkylineBl'>,uniform_100,34
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBlsf'>,uniform_100,33
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBaf'>,uniform_100,33
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBssf'>,uniform_100,33
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBl'>,uniform_100,33
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMinas'>,small_500,18
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMaxas'>,small_500,18
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLlas'>,small_500,18
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSlas'>,small_500,19
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLas'>,small_500,18
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSas'>,small_500,19
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfMinas'>,small_500,19
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfMaxas'>,small_500,18
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfLlas'>,small_500,18
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSlas'>,small_500,19
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfLas'>,small_500,20
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSas'>,small_500,19
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfMinas'>,small_500,19
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfMaxas'>,small_500,18
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfLlas'>,small_500,18
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfSlas'>,small_500,19
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfSas'>,small_500,19
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwflWm'>,small_500,19
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwfWm'>,small_500,19
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwfl'>,small_500,19
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwf'>,small_500,19
-shaker BFD pro,<class 'rectpack.skyline.SkylineBlWm'>,small_500,19
-shaker BFD pro,<class 'rectpack.skyline.SkylineBl'>,small_500,19
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBlsf'>,small_500,19
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBaf'>,small_500,19
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBssf'>,small_500,19
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBl'>,small_500,19
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMinas'>,small_50,2
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMaxas'>,small_50,2
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLlas'>,small_50,3
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSlas'>,small_50,2
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLas'>,small_50,3
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSas'>,small_50,2
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfMinas'>,small_50,2
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfMaxas'>,small_50,2
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfLlas'>,small_50,3
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSlas'>,small_50,2
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfLas'>,small_50,3
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSas'>,small_50,2
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfMinas'>,small_50,2
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfMaxas'>,small_50,2
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfLlas'>,small_50,2
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfSlas'>,small_50,2
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfSas'>,small_50,2
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwflWm'>,small_50,2
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwfWm'>,small_50,2
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwfl'>,small_50,2
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwf'>,small_50,2
-shaker BFD pro,<class 'rectpack.skyline.SkylineBlWm'>,small_50,2
-shaker BFD pro,<class 'rectpack.skyline.SkylineBl'>,small_50,2
+<function first_fit_decreasing at 0x0000023BAAF6C8B0>,orgs bottom-left,uniform_500,150
+<function first_fit_decreasing at 0x0000023BAAF6C8B0>,orgs bottom-left,uniform_50,18
+<function first_fit_decreasing at 0x0000023BAAF6C8B0>,orgs bottom-left,uniform_1000,299
+<function first_fit_decreasing at 0x0000023BAAF6C8B0>,orgs bottom-left,uniform_100,35
+<function first_fit_decreasing at 0x0000023BAAF6C8B0>,orgs bottom-left,small_500,20
+<function first_fit_decreasing at 0x0000023BAAF6C8B0>,orgs bottom-left,small_50,3
+<function first_fit_decreasing at 0x0000023BAAF6C8B0>,orgs bottom-left,small_1000,40
+<function first_fit_decreasing at 0x0000023BAAF6C8B0>,orgs bottom-left,small_100,4
+<function first_fit_decreasing at 0x0000023BAAF6C8B0>,orgs bottom-left,meduim_500,197
+<function first_fit_decreasing at 0x0000023BAAF6C8B0>,orgs bottom-left,meduim_50,21
+<function first_fit_decreasing at 0x0000023BAAF6C8B0>,orgs bottom-left,meduim_1000,396
+<function first_fit_decreasing at 0x0000023BAAF6C8B0>,orgs bottom-left,meduim_100,40
+<function first_fit_decreasing at 0x0000023BAAF6C8B0>,orgs bottom-left,medium_500,131
+<function first_fit_decreasing at 0x0000023BAAF6C8B0>,orgs bottom-left,known_50_bins_3,9
+<function first_fit_decreasing at 0x0000023BAAF6C8B0>,orgs bottom-left,known_500_bins_33,9
+<function first_fit_decreasing at 0x0000023BAAF6C8B0>,orgs bottom-left,known_100_bins_6,9
+<function first_fit_decreasing at 0x0000023BAAF6C8B0>,orgs bottom-left,known_1000_bins_66,9
+<function first_fit_decreasing at 0x0000023BAAF6C8B0>,orgs bottom-left,extremes_500,253
+<function first_fit_decreasing at 0x0000023BAAF6C8B0>,orgs bottom-left,extremes_50,26
+<function first_fit_decreasing at 0x0000023BAAF6C8B0>,orgs bottom-left,extremes_1000,505
+<function first_fit_decreasing at 0x0000023BAAF6C8B0>,orgs bottom-left,extremes_100,51
+<function max_rest at 0x0000023BAAF6C670>,orgs bottom-left,uniform_500,158
+<function first_fit at 0x0000023BAAF6C5E0>,orgs bottom-left,uniform_500,158
+<function max_rest at 0x0000023BAAF6C670>,orgs bottom-left,uniform_50,20
+<function first_fit at 0x0000023BAAF6C5E0>,orgs bottom-left,uniform_50,20
+<function max_rest at 0x0000023BAAF6C670>,orgs bottom-left,uniform_1000,314
+<function first_fit at 0x0000023BAAF6C5E0>,orgs bottom-left,uniform_1000,314
+<function max_rest at 0x0000023BAAF6C670>,orgs bottom-left,uniform_100,37
+<function first_fit at 0x0000023BAAF6C5E0>,orgs bottom-left,uniform_100,37
+<function max_rest at 0x0000023BAAF6C670>,orgs bottom-left,small_500,20
+<function first_fit at 0x0000023BAAF6C5E0>,orgs bottom-left,small_500,20
+<function max_rest at 0x0000023BAAF6C670>,orgs bottom-left,small_50,3
+<function first_fit at 0x0000023BAAF6C5E0>,orgs bottom-left,small_50,3
+<function max_rest at 0x0000023BAAF6C670>,orgs bottom-left,small_1000,40
+<function first_fit at 0x0000023BAAF6C5E0>,orgs bottom-left,small_1000,40
+<function max_rest at 0x0000023BAAF6C670>,orgs bottom-left,small_100,4
+<function first_fit at 0x0000023BAAF6C5E0>,orgs bottom-left,small_100,4
+<function max_rest at 0x0000023BAAF6C670>,orgs bottom-left,meduim_500,204
+<function first_fit at 0x0000023BAAF6C5E0>,orgs bottom-left,meduim_500,204
+<function max_rest at 0x0000023BAAF6C670>,orgs bottom-left,meduim_50,21
+<function first_fit at 0x0000023BAAF6C5E0>,orgs bottom-left,meduim_50,21
+<function max_rest at 0x0000023BAAF6C670>,orgs bottom-left,meduim_1000,407
+<function first_fit at 0x0000023BAAF6C5E0>,orgs bottom-left,meduim_1000,407
+<function max_rest at 0x0000023BAAF6C670>,orgs bottom-left,meduim_100,42
+<function first_fit at 0x0000023BAAF6C5E0>,orgs bottom-left,meduim_100,42
+<function max_rest at 0x0000023BAAF6C670>,orgs bottom-left,medium_500,132
+<function first_fit at 0x0000023BAAF6C5E0>,orgs bottom-left,medium_500,132
+<function max_rest at 0x0000023BAAF6C670>,orgs bottom-left,known_50_bins_3,9
+<function first_fit at 0x0000023BAAF6C5E0>,orgs bottom-left,known_50_bins_3,9
+<function max_rest at 0x0000023BAAF6C670>,orgs bottom-left,known_500_bins_33,9
+<function first_fit at 0x0000023BAAF6C5E0>,orgs bottom-left,known_500_bins_33,9
+<function max_rest at 0x0000023BAAF6C670>,orgs bottom-left,known_100_bins_6,9
+<function first_fit at 0x0000023BAAF6C5E0>,orgs bottom-left,known_100_bins_6,9
+<function max_rest at 0x0000023BAAF6C670>,orgs bottom-left,known_1000_bins_66,9
+<function first_fit at 0x0000023BAAF6C5E0>,orgs bottom-left,known_1000_bins_66,9
+<function max_rest at 0x0000023BAAF6C670>,orgs bottom-left,extremes_500,260
+<function first_fit at 0x0000023BAAF6C5E0>,orgs bottom-left,extremes_500,260
+<function max_rest at 0x0000023BAAF6C670>,orgs bottom-left,extremes_50,27
+<function first_fit at 0x0000023BAAF6C5E0>,orgs bottom-left,extremes_50,27
+<function max_rest at 0x0000023BAAF6C670>,orgs bottom-left,extremes_1000,520
+<function first_fit at 0x0000023BAAF6C5E0>,orgs bottom-left,extremes_1000,520
+<function max_rest at 0x0000023BAAF6C670>,orgs bottom-left,extremes_100,52
+<function first_fit at 0x0000023BAAF6C5E0>,orgs bottom-left,extremes_100,52
+shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBaf'>,uniform_500,152
+shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBlsf'>,uniform_500,152
+shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBssf'>,uniform_500,151
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLas'>,uniform_500,153
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMinas'>,uniform_500,152
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSlas'>,uniform_500,151
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSlas'>,uniform_500,152
+shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBaf'>,uniform_50,19
+shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBlsf'>,uniform_50,19
+shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBssf'>,uniform_50,19
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLas'>,uniform_50,20
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMinas'>,uniform_50,19
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSlas'>,uniform_50,19
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSlas'>,uniform_50,19
+shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBaf'>,uniform_1000,303
+shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBlsf'>,uniform_1000,304
+shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBssf'>,uniform_1000,303
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLas'>,uniform_1000,304
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMinas'>,uniform_1000,303
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSlas'>,uniform_1000,303
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSlas'>,uniform_1000,303
+shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBaf'>,uniform_100,34
+shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBlsf'>,uniform_100,34
+shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBssf'>,uniform_100,34
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLas'>,uniform_100,34
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMinas'>,uniform_100,34
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSlas'>,uniform_100,34
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSlas'>,uniform_100,34
+shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBaf'>,small_500,20
+shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBlsf'>,small_500,20
+shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBssf'>,small_500,20
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLas'>,small_500,20
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMinas'>,small_500,20
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSlas'>,small_500,20
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSlas'>,small_500,20
+shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBaf'>,small_50,3
 shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBlsf'>,small_50,3
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBaf'>,small_50,2
 shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBssf'>,small_50,2
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBl'>,small_50,2
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMinas'>,small_1000,37
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMaxas'>,small_1000,36
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLlas'>,small_1000,37
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSlas'>,small_1000,37
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLas'>,small_1000,37
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSas'>,small_1000,37
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfMinas'>,small_1000,37
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfMaxas'>,small_1000,37
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfLlas'>,small_1000,37
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSlas'>,small_1000,37
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfLas'>,small_1000,37
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSas'>,small_1000,37
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfMinas'>,small_1000,37
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfMaxas'>,small_1000,37
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfLlas'>,small_1000,37
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfSlas'>,small_1000,37
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfSas'>,small_1000,37
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwflWm'>,small_1000,37
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwfWm'>,small_1000,37
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwfl'>,small_1000,38
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwf'>,small_1000,38
-shaker BFD pro,<class 'rectpack.skyline.SkylineBlWm'>,small_1000,37
-shaker BFD pro,<class 'rectpack.skyline.SkylineBl'>,small_1000,38
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBlsf'>,small_1000,37
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBaf'>,small_1000,37
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBssf'>,small_1000,37
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBl'>,small_1000,37
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMinas'>,small_100,4
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMaxas'>,small_100,4
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLlas'>,small_100,4
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSlas'>,small_100,4
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLas'>,small_100,4
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSas'>,small_100,4
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfMinas'>,small_100,4
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfMaxas'>,small_100,4
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfLlas'>,small_100,4
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSlas'>,small_100,4
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfLas'>,small_100,5
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSas'>,small_100,4
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfMinas'>,small_100,4
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfMaxas'>,small_100,4
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfLlas'>,small_100,4
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfSlas'>,small_100,4
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfSas'>,small_100,4
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwflWm'>,small_100,4
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwfWm'>,small_100,4
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwfl'>,small_100,4
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwf'>,small_100,4
-shaker BFD pro,<class 'rectpack.skyline.SkylineBlWm'>,small_100,4
-shaker BFD pro,<class 'rectpack.skyline.SkylineBl'>,small_100,4
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBlsf'>,small_100,4
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLas'>,small_50,3
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMinas'>,small_50,2
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSlas'>,small_50,2
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSlas'>,small_50,2
+shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBaf'>,small_1000,40
+shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBlsf'>,small_1000,40
+shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBssf'>,small_1000,40
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLas'>,small_1000,41
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMinas'>,small_1000,40
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSlas'>,small_1000,40
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSlas'>,small_1000,40
 shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBaf'>,small_100,4
+shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBlsf'>,small_100,5
 shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBssf'>,small_100,4
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBl'>,small_100,4
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMinas'>,meduim_500,173
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMaxas'>,meduim_500,181
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLlas'>,meduim_500,181
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSlas'>,meduim_500,172
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLas'>,meduim_500,178
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSas'>,meduim_500,176
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfMinas'>,meduim_500,173
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfMaxas'>,meduim_500,181
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfLlas'>,meduim_500,181
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSlas'>,meduim_500,172
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfLas'>,meduim_500,178
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSas'>,meduim_500,176
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfMinas'>,meduim_500,176
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfMaxas'>,meduim_500,186
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfLlas'>,meduim_500,186
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfSlas'>,meduim_500,173
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfSas'>,meduim_500,181
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwflWm'>,meduim_500,183
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwfWm'>,meduim_500,178
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwfl'>,meduim_500,183
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwf'>,meduim_500,178
-shaker BFD pro,<class 'rectpack.skyline.SkylineBlWm'>,meduim_500,175
-shaker BFD pro,<class 'rectpack.skyline.SkylineBl'>,meduim_500,175
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBlsf'>,meduim_500,177
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBaf'>,meduim_500,177
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBssf'>,meduim_500,176
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBl'>,meduim_500,176
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMinas'>,meduim_50,18
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMaxas'>,meduim_50,19
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLlas'>,meduim_50,19
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSlas'>,meduim_50,18
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLas'>,meduim_50,20
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSas'>,meduim_50,17
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfMinas'>,meduim_50,18
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfMaxas'>,meduim_50,19
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfLlas'>,meduim_50,19
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSlas'>,meduim_50,18
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfLas'>,meduim_50,20
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSas'>,meduim_50,17
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfMinas'>,meduim_50,18
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfMaxas'>,meduim_50,19
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfLlas'>,meduim_50,19
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfSlas'>,meduim_50,18
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfSas'>,meduim_50,18
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwflWm'>,meduim_50,18
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwfWm'>,meduim_50,18
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwfl'>,meduim_50,18
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwf'>,meduim_50,18
-shaker BFD pro,<class 'rectpack.skyline.SkylineBlWm'>,meduim_50,18
-shaker BFD pro,<class 'rectpack.skyline.SkylineBl'>,meduim_50,18
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBlsf'>,meduim_50,18
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBaf'>,meduim_50,18
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBssf'>,meduim_50,18
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBl'>,meduim_50,18
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMinas'>,meduim_1000,357
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMaxas'>,meduim_1000,363
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLlas'>,meduim_1000,363
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSlas'>,meduim_1000,354
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLas'>,meduim_1000,361
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSas'>,meduim_1000,356
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfMinas'>,meduim_1000,357
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfMaxas'>,meduim_1000,363
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfLlas'>,meduim_1000,363
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSlas'>,meduim_1000,354
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfLas'>,meduim_1000,361
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSas'>,meduim_1000,356
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfMinas'>,meduim_1000,356
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfMaxas'>,meduim_1000,378
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfLlas'>,meduim_1000,378
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfSlas'>,meduim_1000,356
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfSas'>,meduim_1000,367
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwflWm'>,meduim_1000,365
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwfWm'>,meduim_1000,363
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwfl'>,meduim_1000,365
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwf'>,meduim_1000,363
-shaker BFD pro,<class 'rectpack.skyline.SkylineBlWm'>,meduim_1000,354
-shaker BFD pro,<class 'rectpack.skyline.SkylineBl'>,meduim_1000,354
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBlsf'>,meduim_1000,356
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBaf'>,meduim_1000,356
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBssf'>,meduim_1000,356
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBl'>,meduim_1000,356
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMinas'>,meduim_100,34
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMaxas'>,meduim_100,36
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLlas'>,meduim_100,36
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSlas'>,meduim_100,33
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLas'>,meduim_100,35
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSas'>,meduim_100,35
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfMinas'>,meduim_100,34
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfMaxas'>,meduim_100,36
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfLlas'>,meduim_100,36
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSlas'>,meduim_100,33
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfLas'>,meduim_100,35
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSas'>,meduim_100,35
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfMinas'>,meduim_100,33
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfMaxas'>,meduim_100,36
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfLlas'>,meduim_100,36
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfSlas'>,meduim_100,34
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfSas'>,meduim_100,35
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwflWm'>,meduim_100,37
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwfWm'>,meduim_100,34
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwfl'>,meduim_100,37
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwf'>,meduim_100,34
-shaker BFD pro,<class 'rectpack.skyline.SkylineBlWm'>,meduim_100,34
-shaker BFD pro,<class 'rectpack.skyline.SkylineBl'>,meduim_100,34
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBlsf'>,meduim_100,35
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBaf'>,meduim_100,35
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBssf'>,meduim_100,35
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBl'>,meduim_100,35
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMinas'>,medium_500,110
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMaxas'>,medium_500,110
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLlas'>,medium_500,110
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSlas'>,medium_500,108
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLas'>,medium_500,111
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSas'>,medium_500,108
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfMinas'>,medium_500,111
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfMaxas'>,medium_500,110
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfLlas'>,medium_500,110
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSlas'>,medium_500,108
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfLas'>,medium_500,111
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSas'>,medium_500,108
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfMinas'>,medium_500,111
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfMaxas'>,medium_500,111
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfLlas'>,medium_500,111
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfSlas'>,medium_500,110
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfSas'>,medium_500,110
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwflWm'>,medium_500,111
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwfWm'>,medium_500,110
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwfl'>,medium_500,111
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwf'>,medium_500,111
-shaker BFD pro,<class 'rectpack.skyline.SkylineBlWm'>,medium_500,110
-shaker BFD pro,<class 'rectpack.skyline.SkylineBl'>,medium_500,111
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBlsf'>,medium_500,111
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBaf'>,medium_500,111
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBssf'>,medium_500,108
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBl'>,medium_500,108
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMinas'>,known_50_bins_3,7
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMaxas'>,known_50_bins_3,8
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLlas'>,known_50_bins_3,8
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSlas'>,known_50_bins_3,8
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLas'>,known_50_bins_3,8
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSas'>,known_50_bins_3,9
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfMinas'>,known_50_bins_3,8
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfMaxas'>,known_50_bins_3,8
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfLlas'>,known_50_bins_3,8
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSlas'>,known_50_bins_3,7
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfLas'>,known_50_bins_3,8
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSas'>,known_50_bins_3,9
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfMinas'>,known_50_bins_3,7
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfMaxas'>,known_50_bins_3,8
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfLlas'>,known_50_bins_3,8
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfSlas'>,known_50_bins_3,7
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfSas'>,known_50_bins_3,8
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwflWm'>,known_50_bins_3,8
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwfWm'>,known_50_bins_3,8
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwfl'>,known_50_bins_3,8
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwf'>,known_50_bins_3,8
-shaker BFD pro,<class 'rectpack.skyline.SkylineBlWm'>,known_50_bins_3,8
-shaker BFD pro,<class 'rectpack.skyline.SkylineBl'>,known_50_bins_3,8
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBlsf'>,known_50_bins_3,7
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBaf'>,known_50_bins_3,8
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBssf'>,known_50_bins_3,8
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBl'>,known_50_bins_3,8
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMinas'>,known_500_bins_33,7
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMaxas'>,known_500_bins_33,8
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLlas'>,known_500_bins_33,8
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSlas'>,known_500_bins_33,8
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLas'>,known_500_bins_33,8
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSas'>,known_500_bins_33,9
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfMinas'>,known_500_bins_33,8
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfMaxas'>,known_500_bins_33,8
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfLlas'>,known_500_bins_33,8
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSlas'>,known_500_bins_33,7
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfLas'>,known_500_bins_33,8
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSas'>,known_500_bins_33,9
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfMinas'>,known_500_bins_33,7
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfMaxas'>,known_500_bins_33,8
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfLlas'>,known_500_bins_33,8
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfSlas'>,known_500_bins_33,7
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfSas'>,known_500_bins_33,8
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwflWm'>,known_500_bins_33,8
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwfWm'>,known_500_bins_33,8
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwfl'>,known_500_bins_33,8
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwf'>,known_500_bins_33,8
-shaker BFD pro,<class 'rectpack.skyline.SkylineBlWm'>,known_500_bins_33,8
-shaker BFD pro,<class 'rectpack.skyline.SkylineBl'>,known_500_bins_33,8
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBlsf'>,known_500_bins_33,7
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBaf'>,known_500_bins_33,8
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBssf'>,known_500_bins_33,8
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBl'>,known_500_bins_33,8
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMinas'>,known_100_bins_6,7
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMaxas'>,known_100_bins_6,8
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLlas'>,known_100_bins_6,8
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSlas'>,known_100_bins_6,8
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLas'>,known_100_bins_6,8
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSas'>,known_100_bins_6,9
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfMinas'>,known_100_bins_6,8
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfMaxas'>,known_100_bins_6,8
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfLlas'>,known_100_bins_6,8
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSlas'>,known_100_bins_6,7
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfLas'>,known_100_bins_6,8
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSas'>,known_100_bins_6,9
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfMinas'>,known_100_bins_6,7
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfMaxas'>,known_100_bins_6,8
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfLlas'>,known_100_bins_6,8
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfSlas'>,known_100_bins_6,7
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfSas'>,known_100_bins_6,8
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwflWm'>,known_100_bins_6,8
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwfWm'>,known_100_bins_6,8
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwfl'>,known_100_bins_6,8
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwf'>,known_100_bins_6,8
-shaker BFD pro,<class 'rectpack.skyline.SkylineBlWm'>,known_100_bins_6,8
-shaker BFD pro,<class 'rectpack.skyline.SkylineBl'>,known_100_bins_6,8
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBlsf'>,known_100_bins_6,7
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBaf'>,known_100_bins_6,8
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBssf'>,known_100_bins_6,8
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBl'>,known_100_bins_6,8
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMinas'>,known_1000_bins_66,7
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMaxas'>,known_1000_bins_66,8
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLlas'>,known_1000_bins_66,8
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSlas'>,known_1000_bins_66,8
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLas'>,known_1000_bins_66,8
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSas'>,known_1000_bins_66,9
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfMinas'>,known_1000_bins_66,8
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfMaxas'>,known_1000_bins_66,8
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfLlas'>,known_1000_bins_66,8
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSlas'>,known_1000_bins_66,7
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfLas'>,known_1000_bins_66,8
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSas'>,known_1000_bins_66,9
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfMinas'>,known_1000_bins_66,7
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfMaxas'>,known_1000_bins_66,8
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfLlas'>,known_1000_bins_66,8
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfSlas'>,known_1000_bins_66,7
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfSas'>,known_1000_bins_66,8
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwflWm'>,known_1000_bins_66,8
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwfWm'>,known_1000_bins_66,8
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwfl'>,known_1000_bins_66,8
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwf'>,known_1000_bins_66,8
-shaker BFD pro,<class 'rectpack.skyline.SkylineBlWm'>,known_1000_bins_66,8
-shaker BFD pro,<class 'rectpack.skyline.SkylineBl'>,known_1000_bins_66,8
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBlsf'>,known_1000_bins_66,7
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBaf'>,known_1000_bins_66,8
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBssf'>,known_1000_bins_66,8
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBl'>,known_1000_bins_66,8
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMinas'>,extremes_500,252
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMaxas'>,extremes_500,252
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLlas'>,extremes_500,252
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSlas'>,extremes_500,252
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLas'>,extremes_500,252
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSas'>,extremes_500,252
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfMinas'>,extremes_500,252
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfMaxas'>,extremes_500,252
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfLlas'>,extremes_500,252
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSlas'>,extremes_500,252
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfLas'>,extremes_500,252
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSas'>,extremes_500,252
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfMinas'>,extremes_500,252
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfMaxas'>,extremes_500,252
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfLlas'>,extremes_500,252
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfSlas'>,extremes_500,252
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfSas'>,extremes_500,252
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwflWm'>,extremes_500,252
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwfWm'>,extremes_500,252
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwfl'>,extremes_500,252
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwf'>,extremes_500,252
-shaker BFD pro,<class 'rectpack.skyline.SkylineBlWm'>,extremes_500,252
-shaker BFD pro,<class 'rectpack.skyline.SkylineBl'>,extremes_500,252
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBlsf'>,extremes_500,252
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBaf'>,extremes_500,252
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBssf'>,extremes_500,252
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBl'>,extremes_500,252
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMinas'>,extremes_50,26
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMaxas'>,extremes_50,26
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLlas'>,extremes_50,26
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSlas'>,extremes_50,26
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLas'>,extremes_50,26
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSas'>,extremes_50,26
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfMinas'>,extremes_50,26
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfMaxas'>,extremes_50,26
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfLlas'>,extremes_50,26
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSlas'>,extremes_50,26
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfLas'>,extremes_50,26
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSas'>,extremes_50,26
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfMinas'>,extremes_50,26
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfMaxas'>,extremes_50,26
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfLlas'>,extremes_50,26
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfSlas'>,extremes_50,26
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfSas'>,extremes_50,26
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwflWm'>,extremes_50,26
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwfWm'>,extremes_50,26
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwfl'>,extremes_50,26
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwf'>,extremes_50,26
-shaker BFD pro,<class 'rectpack.skyline.SkylineBlWm'>,extremes_50,26
-shaker BFD pro,<class 'rectpack.skyline.SkylineBl'>,extremes_50,26
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBlsf'>,extremes_50,26
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLas'>,small_100,5
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMinas'>,small_100,5
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSlas'>,small_100,4
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSlas'>,small_100,4
+shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBaf'>,meduim_500,201
+shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBlsf'>,meduim_500,201
+shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBssf'>,meduim_500,201
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLas'>,meduim_500,201
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMinas'>,meduim_500,201
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSlas'>,meduim_500,201
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSlas'>,meduim_500,201
+shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBaf'>,meduim_50,21
+shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBlsf'>,meduim_50,21
+shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBssf'>,meduim_50,21
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLas'>,meduim_50,21
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMinas'>,meduim_50,21
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSlas'>,meduim_50,22
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSlas'>,meduim_50,22
+shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBaf'>,meduim_1000,403
+shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBlsf'>,meduim_1000,402
+shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBssf'>,meduim_1000,403
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLas'>,meduim_1000,402
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMinas'>,meduim_1000,403
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSlas'>,meduim_1000,402
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSlas'>,meduim_1000,402
+shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBaf'>,meduim_100,41
+shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBlsf'>,meduim_100,41
+shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBssf'>,meduim_100,41
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLas'>,meduim_100,41
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMinas'>,meduim_100,41
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSlas'>,meduim_100,40
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSlas'>,meduim_100,40
+shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBaf'>,medium_500,134
+shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBlsf'>,medium_500,134
+shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBssf'>,medium_500,133
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLas'>,medium_500,137
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMinas'>,medium_500,135
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSlas'>,medium_500,135
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSlas'>,medium_500,135
+shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBaf'>,known_50_bins_3,9
+shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBlsf'>,known_50_bins_3,9
+shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBssf'>,known_50_bins_3,9
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLas'>,known_50_bins_3,9
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMinas'>,known_50_bins_3,9
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSlas'>,known_50_bins_3,9
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSlas'>,known_50_bins_3,9
+shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBaf'>,known_500_bins_33,9
+shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBlsf'>,known_500_bins_33,9
+shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBssf'>,known_500_bins_33,9
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLas'>,known_500_bins_33,9
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMinas'>,known_500_bins_33,9
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSlas'>,known_500_bins_33,9
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSlas'>,known_500_bins_33,9
+shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBaf'>,known_100_bins_6,9
+shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBlsf'>,known_100_bins_6,9
+shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBssf'>,known_100_bins_6,9
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLas'>,known_100_bins_6,9
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMinas'>,known_100_bins_6,9
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSlas'>,known_100_bins_6,9
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSlas'>,known_100_bins_6,9
+shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBaf'>,known_1000_bins_66,9
+shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBlsf'>,known_1000_bins_66,9
+shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBssf'>,known_1000_bins_66,9
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLas'>,known_1000_bins_66,9
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMinas'>,known_1000_bins_66,9
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSlas'>,known_1000_bins_66,9
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSlas'>,known_1000_bins_66,9
+shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBaf'>,extremes_500,253
+shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBlsf'>,extremes_500,253
+shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBssf'>,extremes_500,253
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLas'>,extremes_500,253
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMinas'>,extremes_500,253
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSlas'>,extremes_500,253
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSlas'>,extremes_500,253
 shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBaf'>,extremes_50,26
+shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBlsf'>,extremes_50,26
 shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBssf'>,extremes_50,26
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBl'>,extremes_50,26
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMinas'>,extremes_1000,504
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMaxas'>,extremes_1000,504
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLlas'>,extremes_1000,504
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSlas'>,extremes_1000,504
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLas'>,extremes_1000,504
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSas'>,extremes_1000,504
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfMinas'>,extremes_1000,504
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfMaxas'>,extremes_1000,504
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfLlas'>,extremes_1000,504
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSlas'>,extremes_1000,504
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfLas'>,extremes_1000,504
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSas'>,extremes_1000,504
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfMinas'>,extremes_1000,504
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfMaxas'>,extremes_1000,504
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfLlas'>,extremes_1000,504
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfSlas'>,extremes_1000,504
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfSas'>,extremes_1000,504
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwflWm'>,extremes_1000,504
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwfWm'>,extremes_1000,504
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwfl'>,extremes_1000,504
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwf'>,extremes_1000,504
-shaker BFD pro,<class 'rectpack.skyline.SkylineBlWm'>,extremes_1000,504
-shaker BFD pro,<class 'rectpack.skyline.SkylineBl'>,extremes_1000,504
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBlsf'>,extremes_1000,504
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBaf'>,extremes_1000,504
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBssf'>,extremes_1000,504
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBl'>,extremes_1000,504
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMinas'>,extremes_100,51
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMaxas'>,extremes_100,51
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLlas'>,extremes_100,51
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSlas'>,extremes_100,51
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLas'>,extremes_100,51
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSas'>,extremes_100,51
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfMinas'>,extremes_100,51
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfMaxas'>,extremes_100,51
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfLlas'>,extremes_100,51
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSlas'>,extremes_100,51
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfLas'>,extremes_100,51
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSas'>,extremes_100,51
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfMinas'>,extremes_100,51
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfMaxas'>,extremes_100,51
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfLlas'>,extremes_100,51
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfSlas'>,extremes_100,51
-shaker BFD pro,<class 'rectpack.guillotine.GuillotineBssfSas'>,extremes_100,51
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwflWm'>,extremes_100,51
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwfWm'>,extremes_100,51
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwfl'>,extremes_100,51
-shaker BFD pro,<class 'rectpack.skyline.SkylineMwf'>,extremes_100,51
-shaker BFD pro,<class 'rectpack.skyline.SkylineBlWm'>,extremes_100,51
-shaker BFD pro,<class 'rectpack.skyline.SkylineBl'>,extremes_100,51
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBlsf'>,extremes_100,51
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLas'>,extremes_50,26
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMinas'>,extremes_50,26
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSlas'>,extremes_50,26
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSlas'>,extremes_50,26
+shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBaf'>,extremes_1000,505
+shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBlsf'>,extremes_1000,505
+shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBssf'>,extremes_1000,505
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLas'>,extremes_1000,505
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMinas'>,extremes_1000,505
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSlas'>,extremes_1000,505
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSlas'>,extremes_1000,505
 shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBaf'>,extremes_100,51
+shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBlsf'>,extremes_100,51
 shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBssf'>,extremes_100,51
-shaker BFD pro,<class 'rectpack.maxrects.MaxRectsBl'>,extremes_100,51
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafLas'>,extremes_100,51
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafMinas'>,extremes_100,51
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBlsfSlas'>,extremes_100,51
+shaker BFD pro,<class 'rectpack.guillotine.GuillotineBafSlas'>,extremes_100,51
